@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+<style>
+  *{
+    background-color:  #453E52;
+    color: #fef5cb;
+    font-family: 'Cinzel', serif;
+  }
+
+  h1, h2 {
+    text-align: center;
+    font-weight:100;
+  }
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse; 
+  width: 100%;
+}
+
+td, th {
+  border: 5px solid #70a593;
+;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+td:first-child {
+  text-align: center;
+}
+#time {
+  width: 20%;
+}
+
+#schedule {
+  width: 65%;
+}
+#save{
+  width: 8%;
+  
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea:focus {
+  background-color: #70a593;
+} 
+
+button:hover {
+  background-color: #fef5cb;
+  color: #453E52;
+}
+
+.present {
+  background-color: #2a5f46;
+  color:  #453E52;
+
+}
+.past {
+  background-color: #adb796;
+  color: #453E52;
+
+
+} 
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>Work Day Scheduler</h1>
+<h2>Simple way to schedule your day</h2>
+<h2 id="date"></h2>
+
+<table class="time-table">
+  <tr>
+    <th id="time">Time</th>
+    <th id="schedule">Activity</th>
+    <th id="save">Save</th>
+  </tr>
+  
+
+</table>
+
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/plugin/utc.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
