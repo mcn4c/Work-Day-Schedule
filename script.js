@@ -21,7 +21,7 @@ for (var i = 8; i < 18; i++){
 setInterval(updateDisplay, 10000)
 
 
-// array of values for timeMarker, hour, and scheduleInput properties
+// array of different values for timeMarker, hour, and scheduleInput properties
 var schedTable = [
   
   {
@@ -120,11 +120,16 @@ function fullSchedule() {
           row.append(timeDisplay, textBlock, saveCol);
         }
 
+        var clearDiv = $("#clear");
+        var clearButton = $('<button id="clear-button">');
+        clearButton.text("Clear your schedule");
+        clearDiv.append(clearButton);
+
       
 }    
   
 
-// storage
+// storage save persists on refresh
 
 //clear button
 
